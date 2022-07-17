@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/39853b416d.js" crossorigin="anonymous"></script>
+    <title>Flex</title>
+    <style>
+        .main-menu {
+            display: flex;
+        }
+
+        .login-icons {
+            font-size: 20px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0;
+        }
+
+        nav li {
+            list-style: none;
+            text-decoration: none;
+            margin-right: 10px;
+            font-size: 20px;
+            padding: 5px 15px;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav li:hover {
+            border-bottom: 2px solid tomato;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        input {
+            border: 1px solid rgba(0, 0, 0, 0.24);
+            border-radius: 10px;
+            font-size: 20px;
+            padding: 10px 40px 10px 10px;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        input[type=submit] {
+            border: none;
+            background-image: linear-gradient(orange, tomato);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <span class="main-menu">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Blogs</li>
+                    <li>Contact</li>
+                </span>
+                <span class="login-icons">
+                    <i class="fa-solid fa-user"></i>
+                </span>
+            </ul>
+        </nav>
+    </header>
+    <section class="form-container">
+        <form class="form">
+            <h2>Please Login</h2>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+</body>
+
+</html>
